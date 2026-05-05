@@ -170,6 +170,9 @@ Senior Principal Engineer at Amazon
 
 .abspos.top269.left455[![Marisa is skeptical](./images/marisa-skeptical.gif)]
 
+.abspos.arrow.top538.left381.textbox.purple["If you want to let *your* agent write <br> memory unsafe code,be my guest."]
+
+
 ---
 
 # What is happening?
