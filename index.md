@@ -19,6 +19,13 @@ count: false
 * Marquee feature:
     * Installing skills, hooks, etc based on your dependencies
 
+--
+
+
+* Member of the Rust Foundation's Innovation Lab
+
+![RIL](./images/RIL.png)
+
 ---
 
 # Why Symposium?
@@ -257,17 +264,6 @@ template:guardrails
 
 ## But could it be better?
 
----
-
-# Rust is a language of DSLs
-
-> **Clarity of purpose**<br>
-> <br>
-> Great code brings only the important characteristics of your application to your attention. It avoids wading through needless complexity to express an idea. Great code can be written and understood iteratively, emphasizing different characteristics at different levels of abstraction.
-
-.footnote[
-    from Tyler Mandry's blost post *[Rust's design goals should be about code](https://tmandry.gitlab.io/blog/posts/the-main-thing/)*
-]
 
 ---
 name:toasty
@@ -420,6 +416,7 @@ template: using-toasty
 # Install symposium
 
 ```
+$ cargo binstall symposium
 $ cargo agents init
 Setting up symposium for your user account.
 
@@ -570,7 +567,7 @@ As a library author, write one set of extensions that work across agents...
 --
 
 * Symposium:
-    * Empower crates in the Rust ecosystem to extend their users' agents
+    * Bring the collective wisdom of the Rust ecosystem to bear on making your agent code better
 --
 * Extensibility FTW:
     * Everyone has something unique to offer
@@ -580,8 +577,8 @@ As a library author, write one set of extensions that work across agents...
 Use Rust? Try it now!
 
 ```
-cargo binstall symposium
-cargo agents init
+$ cargo binstall symposium
+$ cargo agents init
 ```
 
-.abspos.top319.left459[![Make it so](./images/make-it-so.gif)]
+.abspos.top353.left459[![Make it so](./images/make-it-so.gif)]
