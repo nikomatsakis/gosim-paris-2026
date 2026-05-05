@@ -115,7 +115,7 @@ Senior Principal Engineer at Amazon
 
 # But two main things have been holding us back
 
-* "Incumbents"
+* "Rewrites are expensive"
 
 --
 * "Learning curve"
@@ -165,8 +165,6 @@ Senior Principal Engineer at Amazon
 --
 
 ...so fundamentals matter **more**, not **less**.
-
---
 
 .abspos.top233.left391.width400px[![Sold!](./images/sc-sold.gif)]
 
@@ -252,17 +250,9 @@ template:guardrails
 
 ---
 
-# So if Rust is so good...
+# So... Rust + agents are good
 
-> Claude is pretty great at Rust as is. I'd be interested to hear more about what you've found it's bad at.<br>
-> <br>
-> &mdash; a friend of mine, making a comment I've heard a lot
-
----
-
-# Sure, Claude is good
-
-## But could it be better?
+## But could they be better?
 
 
 ---
@@ -402,8 +392,19 @@ template: using-toasty
 .abspos.arrow.top366.left313.textbox.purple[&nbsp;&nbsp;Anthropic<sup>1</sup>&nbsp;&nbsp;]
 
 .footnote[
-    <sup>1</sup> I should say: I tried that toasty example twice, and the second time, Claude did use Toasty 0.5.<br>But it still made a Rust crate in the 2021 edition.
+    <sup>1</sup> I should say: I tried that toasty example twice, and the second time, Claude did use Toasty 0.5. But it still made a Rust crate in the 2021 edition.
 ]
+
+---
+
+# Core axiom: Extensibility wins
+
+.center["Everybody has something unique to offer"]
+
+.center[.p60[![Release the river](./images/release-the-river.gif)]]
+
+.abspos.arrow.top518.left305.textbox.purple[*"Release the Rust ecosystem!"*]
+
 
 ---
 
@@ -417,6 +418,11 @@ template: using-toasty
 
 ```
 $ cargo binstall symposium
+```
+
+--
+
+```
 $ cargo agents init
 Setting up symposium for your user account.
 
@@ -469,19 +475,17 @@ $ cargo agents sync
 ✅ installed skill toasty-guidance → ~/dev/toaster/.kiro/skills/toasty-guidance
 ```
 
+--
+
+.abspos.top176.left236.arrow.rotate135[![Arrow](./images/Arrow.png)]
+
+
 ---
 
 # Symposium syncs skills... automatically
 
-* General Rust guidance, e.g.,
-    * Use Rust 2024
-    * Use `cargo add` to add crates so you get the latest version
-    * Run `cargo fmt` after making edits
-
---
-
 * Install hooks:
-    * After every tool use, synchronize skills
+    * After every tool use, `cargo agents sync` runs automatically
     * When the agent runs `cargo add`, new skills appear
 
 ---
@@ -517,11 +521,7 @@ As a library author, write one set of extensions that work across agents...
 
 --
 
-| Mechanism | Power | Interoperable | Programatic access |
-| --- | --- | --- | --- |
-| MCP server | Limited | Yes | Yes |
-| Skills | Medium | Yes | No, have to copy files |
-| Hooks | High | Not at all | No, have to copy files |
+...good luck with that.
 
 ---
 
@@ -563,7 +563,7 @@ As a library author, write one set of extensions that work across agents...
 
 # Conclusions
 
-* Rust + LLM = strong partners
+* Rust + LLM = peanut butter + chocolate
 --
 
 * Symposium:
