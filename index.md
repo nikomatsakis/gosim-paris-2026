@@ -411,7 +411,7 @@ Which agents do you use? (space to select, enter to confirm):
 
 ---
 
-# Symposium installs hooks and skills
+# Symposium gives general guidance
 
 * General Rust guidance, e.g.,
     * Use Rust 2024
@@ -462,3 +462,162 @@ $ cargo agents sync
 * Install hooks:
     * After every tool use, synchronize skills
     * When the agent runs `cargo add`, new skills appear
+
+---
+
+# Why Symposium, Part 2
+
+## Agent accessibility
+
+---
+
+# Good error messages are *agent accessible*
+
+![Error message from the Rust compiler](./images/error-messages.png)
+
+.abspos.arrow.top183.left260.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top163.left302.textbox.purple[The base error]
+
+.abspos.arrow.top353.left298.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top341.left341.textbox.purple[Needed context]
+
+.abspos.arrow.top441.left244.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top426.left284.textbox.purple[How to fix]
+
+---
+
+# Good error messages are *not enough*
+
+![Answer](./images/docs-rs-claude.png)
+
+--
+
+.abspos.arrow.top234.left818.rotate135[![Arrow](./images/Arrow.png)]
+
+---
+
+# Good for humans...
+
+![Answer](./images/docs-rs-web.png)
+
+---
+
+# ...isn't always good for agents
+
+![Answer](./images/docs-rs-src.png)
+
+---
+
+# Comparison: go doc
+
+```
+> go doc http
+package http // import "net/http"
+
+Package http provides HTTP client and server implementations.
+
+Get, Head, Post, and PostForm make HTTP (or HTTPS) requests:
+
+    resp, err := http.Get("http://example.com/")
+    ...
+    resp, err := http.Post("http://example.com/upload", "image/jpeg", &buf)
+    ...
+    resp, err := http.PostForm("http://example.com/form",
+        url.Values{"key": {"Value"}, "id": {"123"}})
+
+The caller must close the response body when finished with it:
+```
+
+---
+name: crate-info
+
+# Symposium: crate-info
+
+```bash
+> cargo agents crate-info serde
+Crate: serde
+Version: 1.0.228
+Source: /Users/nikomat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228
+```
+
+---
+template: crate-info
+
+.abspos.arrow.top169.left221.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top150.left265.textbox.purple[Correct version used by your crate]
+
+---
+template: crate-info
+
+.abspos.arrow.top257.left340.rotate210[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top308.left373.textbox.purple[Source is already cached by cargo]
+
+---
+name: errors-critique
+# Looking again at error messages
+
+![Error message from the Rust compiler](./images/error-messages.png)
+
+---
+
+template: errors-critique
+
+.abspos.arrow.top259.left252.rotate220[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top296.left298.textbox.purple[ASCII art... hmm. Are agents good at matching columns?]
+
+---
+
+template: errors-critique
+
+.abspos.arrow.top498.left238.rotate220[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top538.left286.textbox.purple[Should we target Rust learners?]
+
+---
+
+template: errors-critique
+
+.abspos.arrow.top101.left483.rotate130[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top68.left468.textbox.purple[Overall: a lot of tokens]
+
+---
+
+# RTK: Rust token killer
+
+![RTK](./images/rtk-tokens.png)
+
+--
+
+.abspos.arrow.top158.left394.rotate130[![Arrow](./images/Arrow.png)]
+.abspos.arrow.top129.left432.textbox.purple[4823 tokens]
+
+--
+
+.abspos.arrow.top201.left780.rotate290[![Arrow](./images/Arrow.png)]
+.abspos.arrow.top260.left687.textbox.purple[11 tokens]
+
+---
+
+# Symposium 
+
+* General Rust guidance
+* Per-crate skills, MCP servers, etc
+
+--
+* Agent-accessible toolchain
+    * crate-info
+    * rtk
+    * more to come!
+--
+* **Connects you to the best** (e.g., RTK)
+
+---
+
+# Symposium: Extensibility
