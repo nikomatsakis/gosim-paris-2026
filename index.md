@@ -97,13 +97,7 @@ Senior Principal Engineer at Amazon
 
 --
 
-.abspos.top196.left28.width600px.bordered[![Rust win](./images/rust-win-3.png)]
-
---
-.abspos.top304.left150.width600px.bordered[![Rust win](./images/rust-win-2.png)]
-
---
-.abspos.top379.left286.width600px.bordered[![Rust win](./images/rust-win-1.png)]
+.abspos.top205.left97.width600px.bordered[![Rust win](./images/rust-vs-python.png)]
 
 ---
 
@@ -115,7 +109,7 @@ Senior Principal Engineer at Amazon
 
 --
 
-.abspos.width700px.bordered[![RFL](./images/rfl.png)]
+.abspos.top245.left85.width700px.bordered[![RFL](./images/rfl.png)]
 
 --
 
