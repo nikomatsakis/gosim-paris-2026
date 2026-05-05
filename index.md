@@ -172,19 +172,19 @@ Here is one example that was sent around a lot recently -- but there are many.
 
 .abspos.arrow.top183.left260.rotate135[![Arrow](./images/Arrow.png)]
 
-.abspos.arrow.top163.left302.bordered.purple[The base error]
+.abspos.arrow.top163.left302.textbox.purple[The base error]
 
 --
 
 .abspos.arrow.top353.left298.rotate135[![Arrow](./images/Arrow.png)]
 
-.abspos.arrow.top341.left341.bordered.purple[Needed context]
+.abspos.arrow.top341.left341.textbox.purple[Needed context]
 
 --
 
 .abspos.arrow.top441.left244.rotate135[![Arrow](./images/Arrow.png)]
 
-.abspos.arrow.top426.left284.bordered.purple[How to fix]
+.abspos.arrow.top426.left284.textbox.purple[How to fix]
 
 ---
 
@@ -202,6 +202,6 @@ Here is one example that was sent around a lot recently -- but there are many.
 
 ---
 
-# Guardrails
+# Rust is a language of DSLs
 
-## But could it be better?
+
