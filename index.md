@@ -124,20 +124,46 @@ Here is one example that was sent around a lot recently -- but there are many.
 
 
 ---
+name:guardrails
 
 # What makes Rust a good fit?
 
 * Guardrails
 
---
+---
+template:guardrails
+
+> "What I really love about Rust is that if it compiles it usually runs. That is fantastic, and that is something that I'm not used to in Java."<br>
+> <br>
+> &mdash; Senior software engineer working in automotive embedded systems
+
+---
+template:guardrails
 
 .p80[![Greg Brockman saying Rust is a great language for agents](./images/greg-brockman-tweet.jpg)]
+
+.footnote[
+    Co-founder and president of OpenAI.
+]
+---
+
+# What makes Rust a good fit?
+
+* Guardrails
+* Versatility
+
+--
+
+> When I got to know about it, I was like 'yeah this is the language I've been looking for'. This is the language that will just make me stop thinking about using C and Python. So I just have to use Rust because then **I can go as low as possible as high as possible**.<br>
+> <br>
+> &mdash; Software engineer and community organizer in Africa
 
 ---
 
 # What makes Rust a good fit?
 
 * Guardrails
+* Versatility
 * Efficiency
 
 --
@@ -155,6 +181,7 @@ Here is one example that was sent around a lot recently -- but there are many.
 # What makes Rust a good fit?
 
 * Guardrails
+* Versatility
 * Efficiency
 * Investment in error messages
 
@@ -192,7 +219,7 @@ Here is one example that was sent around a lot recently -- but there are many.
 
 > Claude is pretty great at Rust as is. I'd be interested to hear more about what you've found it's bad at.<br>
 > <br>
-> &mdash; a friend of mine, making a comment I've herad a lot
+> &mdash; a friend of mine, making a comment I've heard a lot
 
 ---
 
@@ -204,4 +231,234 @@ Here is one example that was sent around a lot recently -- but there are many.
 
 # Rust is a language of DSLs
 
+> **Clarity of purpose**<br>
+> <br>
+> Great code brings only the important characteristics of your application to your attention. It avoids wading through needless complexity to express an idea. Great code can be written and understood iteratively, emphasizing different characteristics at different levels of abstraction.
 
+.footnote[
+    from Tyler Mandry's blost post *[Rust's design goals should be about code](https://tmandry.gitlab.io/blog/posts/the-main-thing/)*
+]
+
+---
+name:toasty
+
+# Example: Toasty
+
+![Toasty](./images/toasty-blog.png)
+
+---
+template:toasty
+.abspos.arrow.top326.left303.rotate135[![Arrow](./images/Arrow.png)]
+
+---
+template:toasty
+
+.abspos.arrow.top389.left168.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top491.left175.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top546.left193.rotate135[![Arrow](./images/Arrow.png)]
+
+---
+name: using-toasty
+# Example: Using Toasty
+
+![Toasty](./images/toasty-use.png)
+
+---
+template: using-toasty
+.abspos.arrow.top143.left237.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top129.left280.textbox.purple[Macros and custom syntax]
+
+---
+template: using-toasty
+
+.abspos.arrow.top372.left369.rotate230[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top425.left352.textbox.purple[New methods]
+
+---
+
+# Toasty is a good example of what is cool about Rust
+
+* **Guardrails:** API enforces type-safety, correct column names, etc
+* **Versatility:** High-level and declarative
+* **Efficiency:** Compiles to efficient code
+
+.footnote[
+    But don't ask about the *Error messages* -- getting good error messages from a macro-heavy library
+    like this is a whole 'nother talk!
+]
+---
+
+# Claude doesn't even know it exists
+
+"What library do you recommend for working with sqlite in Rust?"
+
+![Answer](./images/claude-sql-recs.png)
+
+.footnote[
+    For the record, these too are all excellent libraries!
+]
+
+---
+
+# Claude, can you use toasty?
+
+![Answer](./images/claude-make-executable-prompt.png)
+
+---
+
+# Claude, can you use toasty?
+
+![Answer](./images/claude-make-executable-work.png)
+
+---
+
+# Claude, can you use toasty?
+
+![Answer](./images/claude-make-executable.png)
+
+--
+
+.abspos.arrow.top278.left613.rotate110[![Arrow](./images/Arrow.png)]
+
+---
+
+# Toasty on crates.io
+
+![Answer](./images/toasty-on-cio.png)
+
+--
+
+.abspos.arrow.top295.left160.rotate110[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top295.left160.rotate110[![Arrow](./images/Arrow.png)]
+
+---
+
+# The world is moving faster than ever
+
+## Training data can't keep up
+
+--
+
+![Answer](./images/claude-make-executable.png)
+
+--
+
+.abspos.arrow.top584.left228.rotate180[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top591.left280.textbox.purple[Rust 2024 hit stable Feb 2025]
+
+---
+
+# Common failings I see
+
+* Using old versions of crates
+* Using old versions of Rust
+* Writing GC-like patterns in Rust (Claude 💖 mutexes)
+
+---
+
+# Most frustrating thing of all?
+
+## ...the Rust org cannot help
+
+.center[![Help me obi-wan kanobe, you're my only help](./images/help-me-obi-wan.gif)]
+.abspos.arrow.top366.left313.textbox.purple[&nbsp;&nbsp;Anthropic<sup>1</sup>&nbsp;&nbsp;]
+
+.footnote[
+    <sup>1</sup> I should say: I tried that toasty example twice, and the second time, Claude did use Toasty 0.5.<br>But it still made a Rust crate in the 2021 edition.
+]
+
+---
+
+# Niko to AI vendors
+
+![Help me, help you](./images/help-me-help-you.gif)
+
+---
+
+# ..and this is where Symposium comes in
+
+.center[.p60[![Symposium](./images/symposium5_vase-ferris.svg)]]
+
+---
+
+# ..and this is where Symposium comes in
+
+.center[.p60[![Symposium](./images/symposium5_vase-ferris.svg)]]
+
+---
+
+# Install symposium
+
+```
+$ cargo agents init
+Setting up symposium for your user account.
+
+Which agents do you use? (space to select, enter to confirm):
+> [x] Claude Code
+  [ ] Codex CLI
+  [ ] GitHub Copilot
+  [ ] Gemini CLI
+  [ ] Goose
+  [x] Kiro
+  [x] OpenCode
+```
+
+---
+
+# Symposium installs hooks and skills
+
+* General Rust guidance, e.g.,
+    * Use Rust 2024
+    * Use `cargo add` to add crates so you get the latest version
+    * Run `cargo fmt` after making edits
+
+---
+
+# Symposium syncs skills
+
+![Toasty skill](./images/toasty-skill.png)
+
+--
+
+.abspos.top195.left28.arrow[![Arrow](./images/Arrow.png)]
+
+---
+
+# Symposium syncs skills
+
+```
+$ ls
+Cargo.lock      Cargo.toml      src
+
+$ cargo agents sync
+ℹ️  scanning 1 workspace dependencies
+🟢 ~/.claude/settings.json: hooks already registered
+✅ installed skill find-crate-source → ~/dev/toaster/.claude/skills/find-crate-source
+✅ installed skill rust-best-practice → ~/dev/toaster/.claude/skills/rust-best-practice
+✅ installed skill toasty-guidance → ~/dev/toaster/.claude/skills/toasty-guidance
+🟢 ~/.kiro/agents/symposium.json: hooks already registered
+✅ installed skill find-crate-source → ~/dev/toaster/.kiro/skills/find-crate-source
+✅ installed skill rust-best-practice → ~/dev/toaster/.kiro/skills/rust-best-practice
+✅ installed skill toasty-guidance → ~/dev/toaster/.kiro/skills/toasty-guidance
+```
+
+---
+
+# Symposium syncs skills... automatically
+
+* General Rust guidance, e.g.,
+    * Use Rust 2024
+    * Use `cargo add` to add crates so you get the latest version
+    * Run `cargo fmt` after making edits
+
+--
+
+* Install hooks:
+    * After every tool use, synchronize skills
+    * When the agent runs `cargo add`, new skills appear
