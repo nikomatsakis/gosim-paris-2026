@@ -699,6 +699,11 @@ blockquote p {
   border: 2px solid black;
 }
 
+span.bordered {
+  background: white;
+  border: 2px solid black;
+}
+
 .fliplr img {
   transform: scale(-1, 1);
 }
@@ -739,3 +744,8 @@ blockquote p {
 .white-background {
   background-color: white;
 }
+
+.megamoj {
+  font-size: 700%;
+}
+
