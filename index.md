@@ -80,6 +80,14 @@ Senior Principal Engineer at Amazon
 
 .abspos.arrow.top415.left496.rotate135[![Arrow](./images/Arrow.png)]
 
+.abspos.arrow.top459.left549.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top479.left614.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top491.left665.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top505.left717.rotate135[![Arrow](./images/Arrow.png)]
+
 ---
 
 # Rust has been on a roll lately
@@ -107,9 +115,15 @@ Senior Principal Engineer at Amazon
 
 --
 
-> When I got to know about it, I was like 'yeah this is the language I've been looking for'. This is the language that will just make me stop thinking about using C and Python. So I just have to use Rust because then **I can go as low as possible as high as possible**.<br>
-> <br>
-> &mdash; Software engineer and community organizer in Africa
+.abspos.width700px.bordered[![RFL](./images/rfl.png)]
+
+--
+
+.abspos.left300.top380.bordered[
+<video controls autoplay muted loop style="width: 500px">
+<source src="./images/ratatui.webm" type="video/webm">
+</video>
+]
 
 ---
 
