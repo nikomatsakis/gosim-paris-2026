@@ -5,98 +5,123 @@ count: false
 .p60[![Symposium](./images/symposium5_vase-ferris.svg)]
 
 .me[.grey[*by* **Nicholas Matsakis**]]
-.left[.citation[View slides at `https://nikomatsakis.github.io/gosim-paris-2026/`]]
+.left[.citation[View slides at `https://nikomatsakis.github.io/talkrepo/`]]
+
+---
+
+# Who am I?
+
+--
+
+* Rust maintainer since 2011
+
+--
+
+* Co-lead of the Rust language design team
+
+--
+
+* Senior Principal Engineer at Amazon
+
+---
+
+# Not here in that capacity
 
 ---
 
 # What is Symposium?
 
-* Extended Rust toolchain for agentic development
+--
+
+Two answers:
 
 --
 
+* A tool to install crates/hooks/etc based on your Rust dependencies
 
-* Marquee feature:
-    * Installing skills, hooks, etc based on your dependencies
+--
+
+* A Rust toolchain aimed for use with *agents*
 
 ---
 
-# Why Symposium?
+# So *why* do Symposium?
+
+???
 
 ---
 
-# Who am I?
+# Coding is going agentic
 
-One of the lead designers of Rust
+???
 
-.center[.p80[![Ferris](./images/ferris.svg)]]
-
----
-
-# Who am I?
-
-Senior Principal Engineer at Amazon
-
-.center[.p80[![Ferris](./images/spheres.jpg)]]
+It is my belief that agentic techniques are going here to stay.
 
 ---
 
-# Not heard of Rust?
+# Rust is a popular choice
 
-.abspos.top25.left519.width300px[![Rust](./images/rust-logo-512x512.png)]
+![Headling from ReversingLabs](./images/reversinglabs.com.png)
 
-*Low-level enough for a kernel...*
+--
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *usable enough for a GUI*
+.abspos.top282.left497.arrow.rotate230[![Arrow](./images/Arrow.png)]
+
+--
+
+.abspos.top321.left544.width300px[![What](./images/what.gif)]
 
 ---
 
-# Rust has been on a roll lately
+# Ambitious goals
 
-* Reliable, memory safe
+> My goal is to eliminate every line of C and C++ from Microsoft by 2030. Our strategy is to combine AI *and* Algorithms to rewrite Microsoft’s largest codebases. Our North Star is “1 engineer, 1 month, 1 million lines of code”.<br>
+> <br>
+> &mdash; [Distinguished Engineer at Microsoft, talking about a research project](https://www.linkedin.com/posts/galenh_principal-software-engineer-coreai-microsoft-activity-7407863239289729024-WTzf/)
 
---
+???
 
-.bordered[![Rust in Android](./images/rust-in-android-banner.png)]
-
-.bordered.abspos.top331.left274.width500px[![Chart](./images/rust-in-android-chart.png)]
-
---
-
-.abspos.arrow.top370.left371.rotate135[![Arrow](./images/Arrow.png)]
-
---
-
-.abspos.arrow.top386.left434.rotate135[![Arrow](./images/Arrow.png)]
-
---
-
-.abspos.arrow.top415.left496.rotate135[![Arrow](./images/Arrow.png)]
+Here is one example that was sent around a lot recently -- but there are many.
 
 ---
 
-# Rust has been on a roll lately
+# Fundamentals matter more now
 
-* Reliable, memory safe
-* Efficient by default
+| Losers | Winners |
+| --- | --- |
+| Incumbents | Fundamentals |
 
---
+???
 
-.abspos.top196.left28.width600px.bordered[![Rust win](./images/rust-win-3.png)]
-
---
-.abspos.top304.left150.width600px.bordered[![Rust win](./images/rust-win-2.png)]
-
---
-.abspos.top379.left286.width600px.bordered[![Rust win](./images/rust-win-1.png)]
 
 ---
+name:guardrails
 
-# Rust has been on a roll lately
+# What makes Rust a good fit?
 
-* Reliable, memory safe
-* Efficient by default
-* Productive and versatile
+* Guardrails
+
+---
+template:guardrails
+
+> "What I really love about Rust is that if it compiles it usually runs. That is fantastic, and that is something that I'm not used to in Java."<br>
+> <br>
+> &mdash; Senior software engineer working in automotive embedded systems
+
+---
+template:guardrails
+
+.p80[![Greg Brockman saying Rust is a great language for agents](./images/greg-brockman-tweet.jpg)]
+
+.footnote[
+    Co-founder and president of OpenAI.
+]
+---
+
+# What makes Rust a good fit?
+
+* Guardrails
+* Versatility
 
 --
 
@@ -106,93 +131,7 @@ Senior Principal Engineer at Amazon
 
 ---
 
-# But two main things have been holding us back
-
-* "Incumbents"
-
---
-* "Learning curve"
-
----
-
-# But lately... things have been looking a bit different
-
-> My goal is to eliminate every line of C and C++ from Microsoft by 2030. Our strategy is to combine AI *and* Algorithms to **rewrite Microsoft’s largest codebases**. Our North Star is “1 engineer, 1 month, 1 million lines of code”.<br>
-> <br>
-> &mdash; Distinguished Engineer at Microsoft, [talking about a research project](https://www.linkedin.com/posts/galenh_principal-software-engineer-coreai-microsoft-activity-7407863239289729024-WTzf/) (emphasis mine)
-
----
-
-# *Really* different
-
-> If you’ve already tried Rust and found the learning curve too steep, give it another try with Claude Code or Codex as your pair programmer. **The experience is different when you have an AI that can navigate ownership and borrowing patterns** while you focus on building things.<br>
-> <br>
-> The tools finally catching up to the promise of the language.<br>
-> <br>
-> &mdash; Tigran Bayburtsyan, ["Coding Rust with Claude Code and Codex"](https://tigran.tech/coding-rust-with-claude-code-and-codex/) (emphasis mine)
-
----
-
-# What is happening?
-
-**With AI, coding is faster,**
-
----
-
-# What is happening?
-
-**With AI, coding is faster,**
-
-...so nobody will use libraries and we'll just let agents write assembly language for max performance!
-
---
-
-.abspos.top269.left455[![Marisa is skeptical](./images/marisa-skeptical.gif)]
-
----
-
-# What is happening?
-
-**With AI, coding is faster,**
-
---
-
-...so fundamentals matter **more**, not **less**.
-
---
-
-.abspos.top233.left391.width400px[![Sold!](./images/sc-sold.gif)]
-
----
-
-# Rust + LLM = dream-team?
-
-* Guardrails
-
---
-template:guardrails
-
-.p80[![Greg Brockman saying Rust is a great language for agents](./images/greg-brockman-tweet.jpg)]
-
-.footnote[
-    Co-founder and president of OpenAI.
-]
-
-
----
-
-# Rust + LLM = dream-team?
-
-* Guardrails
-* Versatility
-
---
-
-.abspos.width600px.bordered.top212.left150[![Codex adopts Rust](./images/codex-rust-rewrite.png)]
-
----
-
-# Rust + LLM = dream-team?
+# What makes Rust a good fit?
 
 * Guardrails
 * Versatility
@@ -200,15 +139,17 @@ template:guardrails
 
 --
 
-.abspos.top247.left52.width600px.bordered[![Rust win](./images/rust-win-3.png)]
+.p60.bordered[![Rust win](./images/rust-win-3.png)]
 
-.abspos.top349.left112.width600px.bordered[![Rust win](./images/rust-win-2.png)]
+--
+.abspos.top283.left105.p60.bordered[![Rust win](./images/rust-win-2.png)]
 
-.abspos.top415.left187.width600px.bordered[![Rust win](./images/rust-win-1.png)]
+--
+.abspos.top340.left188.p60.bordered[![Rust win](./images/rust-win-1.png)]
 
 ---
 
-# Rust + LLM = dream-team?
+# What makes Rust a good fit?
 
 * Guardrails
 * Versatility
@@ -344,10 +285,6 @@ template: using-toasty
 
 ![Answer](./images/claude-make-executable-work.png)
 
---
-
-.abspos.arrow.top163.left572.textbox.purple[That's a lot of tokens...]
-
 ---
 
 # Claude, can you use toasty?
@@ -392,9 +329,7 @@ template: using-toasty
 
 * Using old versions of crates
 * Using old versions of Rust
-* Writing GC-like patterns in Rust
-    * Claude 💖 mutexes
-    * Niko does not
+* Writing GC-like patterns in Rust (Claude 💖 mutexes)
 
 ---
 
@@ -408,6 +343,18 @@ template: using-toasty
 .footnote[
     <sup>1</sup> I should say: I tried that toasty example twice, and the second time, Claude did use Toasty 0.5.<br>But it still made a Rust crate in the 2021 edition.
 ]
+
+---
+
+# Niko to AI vendors
+
+![Help me, help you](./images/help-me-help-you.gif)
+
+---
+
+# ..and this is where Symposium comes in
+
+.center[.p60[![Symposium](./images/symposium5_vase-ferris.svg)]]
 
 ---
 
@@ -488,8 +435,77 @@ $ cargo agents sync
     * When the agent runs `cargo add`, new skills appear
 
 ---
+
+# Why Symposium? Part 2.
+
+## Agent accessibility
+
+---
+
+# Good error messages are *agent accessible*
+
+![Error message from the Rust compiler](./images/error-messages.png)
+
+.abspos.arrow.top183.left260.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top163.left302.textbox.purple[The base error]
+
+.abspos.arrow.top353.left298.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top341.left341.textbox.purple[Needed context]
+
+.abspos.arrow.top441.left244.rotate135[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top426.left284.textbox.purple[How to fix]
+
+---
+
+# Good error messages are *not enough*
+
+![Answer](./images/docs-rs-claude.png)
+
+--
+
+.abspos.arrow.top234.left818.rotate135[![Arrow](./images/Arrow.png)]
+
+---
+
+# Good for humans...
+
+![Answer](./images/docs-rs-web.png)
+
+---
+
+# ...isn't always good for agents
+
+![Answer](./images/docs-rs-src.png)
+
+---
+
+# Comparison: go doc
+
+```
+> go doc http
+package http // import "net/http"
+
+Package http provides HTTP client and server implementations.
+
+Get, Head, Post, and PostForm make HTTP (or HTTPS) requests:
+
+    resp, err := http.Get("http://example.com/")
+    ...
+    resp, err := http.Post("http://example.com/upload", "image/jpeg", &buf)
+    ...
+    resp, err := http.PostForm("http://example.com/form",
+        url.Values{"key": {"Value"}, "id": {"123"}})
+
+The caller must close the response body when finished with it:
+```
+
+---
 name: crate-info
-# Symposium provides APIs to help agents
+
+# Symposium: crate-info
 
 ```bash
 > cargo agents crate-info serde
@@ -503,85 +519,166 @@ template: crate-info
 
 .abspos.arrow.top169.left221.rotate135[![Arrow](./images/Arrow.png)]
 
-.abspos.arrow.top150.left265.textbox.purple[Correct version used by your code]
+.abspos.arrow.top150.left265.textbox.purple[Correct version used by your crate]
 
 ---
 template: crate-info
 
 .abspos.arrow.top257.left340.rotate210[![Arrow](./images/Arrow.png)]
 
-.abspos.arrow.top308.left373.textbox.purple[Let the agent browse full sources]
+.abspos.arrow.top308.left373.textbox.purple[Source is already cached by cargo]
+
+---
+name: errors-critique
+# Looking again at error messages
+
+![Error message from the Rust compiler](./images/error-messages.png)
 
 ---
 
-# Symposium provides for interoperability
+template: errors-critique
 
-As a library author, write one set of extensions that work across agents...
+.abspos.arrow.top259.left252.rotate220[![Arrow](./images/Arrow.png)]
 
---
-
-| Mechanism | Power | Interoperable | Programatic access |
-| --- | --- | --- | --- |
-| MCP server | Limited | Yes | Yes |
-| Skills | Medium | Yes | No, have to copy files |
-| Hooks | High | Not at all | No, have to copy files |
+.abspos.arrow.top296.left298.textbox.purple[ASCII art... hmm. Are agents good at matching columns?]
 
 ---
 
-# Even AGENTS.md is not universally supported
+template: errors-critique
 
-.abspos.bordered.width600px[![Agents](./images/agents.md.png)]
+.abspos.arrow.top498.left238.rotate220[![Arrow](./images/Arrow.png)]
 
---
-
-.abspos.bordered.width600px.top315.left224[![Agents](./images/agents.md.scoll.png)]
+.abspos.arrow.top538.left286.textbox.purple[Should we target Rust learners?]
 
 ---
 
-# Niko to vendors...
+template: errors-critique
 
-.abspos.top165.left222[![Help me help you](./images/help-me-help-you.gif)]
+.abspos.arrow.top101.left483.rotate130[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top68.left468.textbox.purple[Overall: a lot of tokens]
 
 ---
 
-# Symposium does the best we can
+# RTK: Rust token killer
 
-* Library (crate) provides extensions
-    * MCP servers
-    * Skills
-    * Hooks
---
-
-
-* User picks agent
+![RTK](./images/rtk-tokens.png)
 
 --
 
+.abspos.arrow.top158.left394.rotate130[![Arrow](./images/Arrow.png)]
+.abspos.arrow.top129.left432.textbox.purple[4823 tokens]
 
-* Symposium adapts
-    * Load skills into the right directories for the agent user chose
-    * Converts between hook formats
+--
+
+.abspos.arrow.top201.left780.rotate290[![Arrow](./images/Arrow.png)]
+.abspos.arrow.top260.left687.textbox.purple[11 tokens]
+
+---
+
+# Symposium 
+
+* General Rust guidance
+* Per-crate skills, MCP servers, etc
+
+--
+* Agent-accessible toolchain
+    * crate-info
+    * rtk
+    * more to come!
+--
+* **Connects you to the best** (e.g., RTK)
+
+---
+
+# Why Symposium? Part 3.
+
+## Extensibility
+
+---
+
+# Core axiom
+
+*Everyone has something unique to offer*
+
+--
+
+put another way:
+
+*There's always someone smarter than you*<sup>1</sup>
+
+.footnote[
+    <sup>1</sup> Not always a welcome lesson, I know, but one we all go through.
+]
+
+---
+
+# Core idea of Symposium...
+
+
+
+---
+
+# ...Agentic vendors don't make it easy
+
+* MCP servers:
+    * Interoperable, but limited
+
+--
+
+* Skills:
+    * Interoperable, but limited
+    * Every agent has their own conventions<sup>1</sup>
+
+--
+
+* Hooks:
+    * Pretty powerful, but every agent is different
+
+---
+
+# The "state of the art" when it comes to interop
+
+![agents.md](FIXME)
+
+---
+
+# What we've done in Symposium
+
+* User:
+    * Picks the agents they want with `cargo agents init`
+* Crate author:
+    * Supplies skills and hooks in a neutral fashion
+* Symposium:
+    * Adapts one to the other
+
+---
+
+# What I imagine
+
+* add dial9 telemetry crate
+* in your IDE, get rich visualization
+* agent can explain
+
+---
+
+# One thing is for sure...
+
+## Hooks and AGENTS.md ain't gonna get us there
+
+---
+
+# What I consider most promising: ACP
+
+
 
 ---
 
 # Conclusions
 
-* Rust + LLM = strong partners
---
-
 * Symposium:
-    * Empower crates in the Rust ecosystem to extend their users' agents
---
-* Extensibility FTW:
-    * Everyone has something unique to offer
-
---
-
-Use Rust? Try it now!
-
-```
-cargo binstall symposium
-cargo agents init
-```
-
-.abspos.top319.left459[![Make it so](./images/make-it-so.gif)]
+    * Rust tooling meant for use by agents
+* Ecosystem:
+    * EVeryone has something unique to offer
+* Interoperability:
+    * Agent Client Protocol can get us there
