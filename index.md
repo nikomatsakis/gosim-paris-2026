@@ -19,10 +19,9 @@ count: false
 * Marquee feature:
     * Installing skills, hooks, etc based on your dependencies
 
---
+---
 
-
-* Member of the Rust Foundation's Innovation Lab
+# Member of the Rust Foundation's Innovation Lab
 
 ![RIL](./images/RIL.png)
 
@@ -54,83 +53,43 @@ Senior Principal Engineer at Amazon
 
 *Low-level enough for a kernel...*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *usable enough for a GUI*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *usable enough for an application*
 
 ---
 
-# Rust has been on a roll lately
+# Low-level enough for a kernel?
 
-* Reliable, memory safe
+.abspos.top122.left98.width700px.bordered[![RFL](./images/rfl.png)]
 
---
-
-.bordered[![Rust in Android](./images/rust-in-android-banner.png)]
-
-.bordered.abspos.top331.left274.width500px[![Chart](./images/rust-in-android-chart.png)]
-
---
-
-.abspos.arrow.top370.left371.rotate135[![Arrow](./images/Arrow.png)]
-
---
-
-.abspos.arrow.top386.left434.rotate135[![Arrow](./images/Arrow.png)]
-
---
-
-.abspos.arrow.top415.left496.rotate135[![Arrow](./images/Arrow.png)]
-
-.abspos.arrow.top459.left549.rotate135[![Arrow](./images/Arrow.png)]
-
-.abspos.arrow.top479.left614.rotate135[![Arrow](./images/Arrow.png)]
-
-.abspos.arrow.top491.left665.rotate135[![Arrow](./images/Arrow.png)]
-
-.abspos.arrow.top505.left717.rotate135[![Arrow](./images/Arrow.png)]
+.abspos.top282.left98.width700px.bordered[![RFL](./images/rust-in-windows-kernel.png)]
 
 ---
 
-# Rust has been on a roll lately
+# High-level enough for an application?
 
-* Reliable, memory safe
-* Efficient by default
 
---
-
-.abspos.top205.left97.width600px.bordered[![Rust win](./images/rust-vs-python.png)]
-
----
-
-# Rust has been on a roll lately
-
-* Reliable, memory safe
-* Efficient by default
-* Productive and versatile
-
---
-
-.abspos.top245.left85.width700px.bordered[![RFL](./images/rfl.png)]
-
---
-
-.abspos.left300.top380.bordered[
-<video controls autoplay muted loop style="width: 500px">
+.abspos.left50.top180.bordered[
+<video controls autoplay muted loop style="width: 800px">
 <source src="./images/ratatui.webm" type="video/webm">
 </video>
 ]
 
+.abspos.top563.left236[TUI oscilliscope written using ratatui]
+
 ---
 
-# But two main things have been holding us back
+# Rust has been on a roll lately
 
-* "Rewrites are expensive"
+But two main things hold us back:
+
+* "Rewrites are expensive, interop is hard"
 
 --
 * "Learning curve"
 
 ---
 
-# But lately... things have been looking a bit different
+# Lately... things look a bit different
 
 > My goal is to eliminate every line of C and C++ from Microsoft by 2030. Our strategy is to combine AI *and* Algorithms to **rewrite Microsoft’s largest codebases**. Our North Star is “1 engineer, 1 month, 1 million lines of code”.<br>
 > <br>
@@ -148,36 +107,21 @@ Senior Principal Engineer at Amazon
 
 ---
 
-# What is happening?
+# When using agents...
 
-**With AI, coding is faster,**
+Pick a language, libraries, etc based not on the code you have now,
 
----
-
-# What is happening?
-
-**With AI, coding is faster,**
-
-...so nobody will use libraries and we'll just let agents write assembly language for max performance!
-
---
-
-.abspos.top269.left455[![Marisa is skeptical](./images/marisa-skeptical.gif)]
-
-.abspos.arrow.top538.left381.textbox.purple["If you want to let *your* agent write <br> memory unsafe code,be my guest."]
-
+but based on the **code you want to maintain going forward**.
 
 ---
 
-# What is happening?
-
-**With AI, coding is faster,**
+# When your slogan is "a stich in time, saves nine"...
 
 --
 
-...so fundamentals matter **more**, not **less**.
+.abspos.top146.left273.width400px[![Alexis happily flipping her hair!](./images/alexis-happy.gif)]
 
-.abspos.top233.left391.width400px[![Sold!](./images/sc-sold.gif)]
+.abspos.top580.left385[Rust right now]
 
 ---
 
@@ -272,6 +216,10 @@ name:toasty
 # Example: Toasty
 
 ![Toasty](./images/toasty-blog.png)
+
+---
+template:toasty
+.abspos.arrow.top163.left6[![Arrow](./images/Arrow.png)]
 
 ---
 template:toasty
@@ -408,17 +356,6 @@ template: using-toasty
 
 ---
 
-# Core axiom: Extensibility wins
-
-.center["Everybody has something unique to offer"]
-
-.center[.p60[![Release the river](./images/release-the-river.gif)]]
-
-.abspos.arrow.top518.left305.textbox.purple[*"Release the Rust ecosystem!"*]
-
-
----
-
 # ..and this is where Symposium comes in
 
 .center[.p60[![Symposium](./images/symposium5_vase-ferris.svg)]]
@@ -458,7 +395,7 @@ Which agents do you use? (space to select, enter to confirm):
 
 ---
 
-# Symposium syncs skills
+# Symposium lets you write skills for crates
 
 ![Toasty skill](./images/toasty-skill.png)
 
@@ -468,36 +405,11 @@ Which agents do you use? (space to select, enter to confirm):
 
 ---
 
-# Symposium syncs skills
-
-```
-$ ls
-Cargo.lock      Cargo.toml      src
-
-$ cargo agents sync
-ℹ️  scanning 1 workspace dependencies
-🟢 ~/.claude/settings.json: hooks already registered
-✅ installed skill find-crate-source → ~/dev/toaster/.claude/skills/find-crate-source
-✅ installed skill rust-best-practice → ~/dev/toaster/.claude/skills/rust-best-practice
-✅ installed skill toasty-guidance → ~/dev/toaster/.claude/skills/toasty-guidance
-🟢 ~/.kiro/agents/symposium.json: hooks already registered
-✅ installed skill find-crate-source → ~/dev/toaster/.kiro/skills/find-crate-source
-✅ installed skill rust-best-practice → ~/dev/toaster/.kiro/skills/rust-best-practice
-✅ installed skill toasty-guidance → ~/dev/toaster/.kiro/skills/toasty-guidance
-```
-
---
-
-.abspos.top176.left236.arrow.rotate135[![Arrow](./images/Arrow.png)]
-
-
----
-
-# Symposium syncs skills... automatically
+# Symposium installs skills automatically
 
 * Install hooks:
-    * After every tool use, `cargo agents sync` runs automatically
-    * When the agent runs `cargo add`, new skills appear
+    * After every tool use, we check for new relevant skills and install them
+    * **Result:** After agent runs `cargo add toasty`, it knows how to use it
 
 ---
 name: crate-info
@@ -507,7 +419,7 @@ name: crate-info
 > cargo agents crate-info serde
 Crate: serde
 Version: 1.0.228
-Source: /Users/nikomat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228
+Source: /Users/nikomat/.cargo/registry/src/index.crates.io/serde-1.0.228
 ```
 
 ---
@@ -523,6 +435,16 @@ template: crate-info
 .abspos.arrow.top257.left340.rotate210[![Arrow](./images/Arrow.png)]
 
 .abspos.arrow.top308.left373.textbox.purple[Let the agent browse full sources]
+
+---
+
+# Symposium aims to make agents extensible
+
+.center["Everybody has something unique to offer"]
+
+.center[.p60[![Release the river](./images/release-the-river.gif)]]
+
+.abspos.arrow.top518.left305.textbox.purple[*"Release the Rust ecosystem!"*]
 
 ---
 
@@ -574,14 +496,14 @@ As a library author, write one set of extensions that work across agents...
 
 # Conclusions
 
-* Rust + LLM = peanut butter + chocolate
+* If you want something to be amazing:
+    * Unleash the ecosystem!
+
 --
 
-* Symposium:
-    * Bring the collective wisdom of the Rust ecosystem to bear on making your agent code better
---
-* Extensibility FTW:
-    * Everyone has something unique to offer
+* Symposium aims to take a good thing (Rust + LLMs) and make it **better**:
+    * Skills and extensions based on what you use
+    * Up-to-date guidance
 
 --
 
