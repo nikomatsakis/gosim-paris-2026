@@ -59,7 +59,11 @@ Senior Principal Engineer at Amazon
 
 # Low-level enough for a kernel?
 
+--
+
 .abspos.top122.left98.width700px.bordered[![RFL](./images/rfl.png)]
+
+--
 
 .abspos.top282.left98.width700px.bordered[![RFL](./images/rust-in-windows-kernel.png)]
 
@@ -67,6 +71,7 @@ Senior Principal Engineer at Amazon
 
 # High-level enough for an application?
 
+--
 
 .abspos.left50.top180.bordered[
 <video controls autoplay muted loop style="width: 800px">
@@ -115,7 +120,7 @@ but based on the **code you want to maintain going forward**.
 
 ---
 
-# When your slogan is "a stich in time, saves nine"...
+# When your slogan is "a stich in time, saves nine" in an agentic world...
 
 --
 
@@ -160,11 +165,11 @@ template:guardrails
 
 --
 
-.abspos.top247.left52.width600px.bordered[![Rust win](./images/rust-win-3.png)]
+.abspos.top100.left295.width600px.bordered[![Rust win](./images/rust-win-3.png)]
 
-.abspos.top349.left112.width600px.bordered[![Rust win](./images/rust-win-2.png)]
+.abspos.top229.left40.width600px.bordered[![Rust win](./images/rust-win-2.png)]
 
-.abspos.top415.left187.width600px.bordered[![Rust win](./images/rust-win-1.png)]
+.abspos.top332.left292.width600px.bordered[![Rust win](./images/rust-win-1.png)]
 
 ---
 
@@ -249,22 +254,27 @@ template: using-toasty
 ---
 template: using-toasty
 
-.abspos.arrow.top372.left369.rotate230[![Arrow](./images/Arrow.png)]
+.abspos.arrow.top293.left390.rotate130[![Arrow](./images/Arrow.png)]
 
-.abspos.arrow.top425.left352.textbox.purple[New methods]
+.abspos.arrow.top263.left424.textbox.purple[New methods]
 
----
-
-# Toasty is a good example of what is cool about Rust
+--
 
 * **Guardrails:** API enforces type-safety, correct column names, etc
 * **Versatility:** High-level and declarative
 * **Efficiency:** Compiles to efficient code
 
-.footnote[
-    But don't ask about the *Error messages* -- getting good error messages from a macro-heavy library
-    like this is a whole 'nother talk!
-]
+---
+template: using-toasty
+
+* **Guardrails:** API enforces type-safety, correct column names, etc
+* **Versatility:** High-level and declarative
+* **Efficiency:** Compiles to efficient code
+
+.abspos.arrow.top302.left569.rotate130[![Arrow](./images/Arrow.png)]
+
+.abspos.arrow.top278.left610.textbox.purple[Type-safe, efficient]
+
 ---
 
 # Claude doesn't even know it exists
@@ -333,17 +343,9 @@ template: using-toasty
 
 ---
 
-# Common failings I see
-
-* Using old versions of crates
-* Using old versions of Rust
-* Writing GC-like patterns in Rust
-    * Claude 💖 mutexes
-    * Niko does not
-
----
-
 # Most frustrating thing of all?
+
+--
 
 ## ...the Rust org cannot help
 
@@ -365,7 +367,7 @@ template: using-toasty
 # Install symposium
 
 ```
-$ cargo binstall symposium
+$ cargo install symposium   # or cargo binstall!
 ```
 
 --
@@ -376,12 +378,12 @@ Setting up symposium for your user account.
 
 Which agents do you use? (space to select, enter to confirm):
 > [x] Claude Code
-  [ ] Codex CLI
+  [x] Codex CLI
   [ ] GitHub Copilot
   [ ] Gemini CLI
   [ ] Goose
   [x] Kiro
-  [x] OpenCode
+  [ ] OpenCode
 ```
 
 ---
@@ -460,9 +462,9 @@ As a library author, write one set of extensions that work across agents...
 
 # Even AGENTS.md is not universally supported
 
-.abspos.bordered.width600px[![Agents](./images/agents.md.png)]
-
 --
+
+.abspos.bordered.width600px[![Agents](./images/agents.md.png)]
 
 .abspos.bordered.width600px.top315.left224[![Agents](./images/agents.md.scoll.png)]
 
